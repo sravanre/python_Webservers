@@ -21,8 +21,7 @@ pipeline
 		stage('build the image from the code'){
 			steps{
 				sh '''sudo docker ps
-					  sudo docker images
-					  
+					  sudo docker images					  
 					  sudo docker build -t new_pythonflaskapp_sravan .
 					  sudo docker images
 					  sudo docker run -d --name myflaskapp -p 5000:5000 new_pythonflaskapp_sravan
