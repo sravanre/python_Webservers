@@ -11,12 +11,12 @@ pipeline
             }
         }
 		
-		stage('check the existing port is free '){
-			steps{
-				sh ''' netstat -tulpn | grep 5000
-				'''
-			}
-		}
+		// stage('check the existing port is free '){
+		// 	steps{
+		// 		sh ''' netstat -tulpn | grep 5000
+		// 		'''
+		// 	}
+		// }
 		
 		stage('build the image from the code'){
 			steps{
