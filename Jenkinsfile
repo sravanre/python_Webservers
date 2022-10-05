@@ -22,8 +22,7 @@ pipeline
 			steps{
 				sh '''sudo docker ps
 					  sudo docker images
-					  sudo docker rmi new_pythonflaskapp_sravan
-					  sudo docker images rm myflaskapp
+					  
 					  sudo docker build -t new_pythonflaskapp_sravan .
 					  sudo docker images
 					  sudo docker run -d --name myflaskapp -p 5000:5000 new_pythonflaskapp_sravan
